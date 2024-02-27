@@ -1,0 +1,368 @@
+{\rtf1\ansi\deff3\adeflang1025
+{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\froman\fprq2\fcharset0 Liberation Serif{\*\falt Times New Roman};}{\f4\froman\fprq2\fcharset0 Calibri;}{\f5\fswiss\fprq2\fcharset0 Liberation Sans{\*\falt Arial};}{\f6\fnil\fprq2\fcharset0 Noto Sans CJK SC;}{\f7\fnil\fprq0\fcharset128 Lohit Devanagari;}{\f8\fnil\fprq2\fcharset0 Lohit Devanagari;}}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}
+{\stylesheet{\s0\snext0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052 Normal;}
+{\*\cs15\snext15\loch\cf9\ul\ulc0 Hyperlink;}
+{\*\cs16\snext16\loch\cf13\ul\ulc0 FollowedHyperlink;}
+{\s17\sbasedon0\snext18\rtlch\af8\afs28 \ltrch\hich\af5\loch\sb240\sa120\keepn\f5\fs28\dbch\af6 Heading;}
+{\s18\sbasedon0\snext18\loch\sl276\slmult1\sb0\sa140 Text Body;}
+{\s19\sbasedon18\snext19\rtlch\af7 \ltrch\loch\sl276\slmult1\sb0\sa140 List;}
+{\s20\sbasedon0\snext20\rtlch\af7\afs24\ai \ltrch\loch\sb120\sa120\noline\fs24\i Caption;}
+{\s21\sbasedon0\snext21\rtlch\af7 \ltrch\loch\noline Index;}
+}{\*\generator LibreOffice/7.3.7.2$Linux_X86_64 LibreOffice_project/30$Build-2}{\info{\creatim\yr0\mo0\dy0\hr0\min0}{\revtim\yr0\mo0\dy0\hr0\min0}{\printim\yr0\mo0\dy0\hr0\min0}}{\*\userprops}\deftab720
+\hyphauto1\viewscale100
+{\*\pgdsctbl
+{\pgdsc0\pgdscuse451\pgwsxn12240\pghsxn15840\marglsxn1440\margrsxn1440\margtsxn1440\margbsxn1440\pgdscnxt0 Default Page Style;}}
+\formshade\paperh15840\paperw12240\margl1440\margr1440\margt1440\margb1440\sectd\sbknone\pgndec\sftnnar\saftnnrlc\sectunlocked1\pgwsxn12240\pghsxn15840\marglsxn1440\margrsxn1440\margtsxn1440\margbsxn1440\ftnbj\ftnstart1\ftnrstcont\ftnnar\aenddoc\aftnrstcont\aftnstart1\aftnnrlc
+{\*\ftnsep\chftnsep}\pgndec\pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1033\f4\loch
+<?php}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1033\f4\loch
+/**}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1033\f4
+ }{\hich\af4\loch\fs22\lang1033\f4\loch
+* }{\hich\af4\loch\fs22\lang1049\f4\loch
+\u1055\'3f\u1088\'3f\u1080\'3f\u1084\'3f\u1077\'3f\u1088\'3f \u1072\'3f\u1074\'3f\u1090\'3f\u1086\'3f\u1084\'3f\u1072\'3f\u1090\'3f\u1080\'3f\u1095\'3f\u1077\'3f\u1089\'3f\u1082\'3f\u1086\'3f\u1075\'3f\u1086\'3f \u1089\'3f\u1082\'3f\u1072\'3f\u1095\'3f\u1080\'3f\u1074\'3f\u1072\'3f\u1085\'3f\u1080\'3f\u1103\'3f \u1090\'3f\u1077\'3f\u1083\'3f\u1077\'3f\u1087\'3f\u1088\'3f\u1086\'3f\u1075\'3f\u1088\'3f\u1072\'3f\u1084\'3f\u1084\'3f.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+ }{\hich\af4\loch\fs22\lang1049\f4\loch
+*/}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar\hich\af4\loch\fs22\lang1049\f4\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+set_time_limit(600); // \u1052\'3f\u1072\'3f\u1082\'3f\u1089\'3f\u1080\'3f\u1084\'3f\u1072\'3f\u1083\'3f\u1100\'3f\u1085\'3f\u1086\'3f\u1077\'3f \u1074\'3f\u1088\'3f\u1077\'3f\u1084\'3f\u1103\'3f \u1074\'3f\u1099\'3f\u1087\'3f\u1086\'3f\u1083\'3f\u1085\'3f\u1077\'3f\u1085\'3f\u1080\'3f\u1103\'3f \u1089\'3f\u1082\'3f\u1088\'3f\u1080\'3f\u1087\'3f\u1090\'3f\u1072\'3f.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+$srvHost = 'xmltv.s-tv.ru';}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+$Login = 'test'; // \u1042\'3f\u1072\'3f\u1096\'3f \u1083\'3f\u1086\'3f\u1075\'3f\u1080\'3f\u1085\'3f.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+$Pass = ''; // \u1042\'3f\u1072\'3f\u1096\'3f \u1087\'3f\u1072\'3f\u1088\'3f\u1086\'3f\u1083\'3f\u1100\'3f.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+$Show = '2'; // \u1057\'3f\u1087\'3f\u1080\'3f\u1089\'3f\u1086\'3f\u1082\'3f \u1082\'3f\u1072\'3f\u1085\'3f\u1072\'3f\u1083\'3f\u1086\'3f\u1074\'3f \u1074\'3f \u1092\'3f\u1086\'3f\u1088\'3f\u1084\'3f\u1072\'3f\u1090\'3f\u1077\'3f 1-HTML, 2-XML.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+$XmlTV = '1'; // \u1060\'3f\u1086\'3f\u1088\'3f\u1084\'3f\u1072\'3f\u1090\'3f \u1087\'3f\u1088\'3f\u1086\'3f\u1075\'3f\u1088\'3f\u1072\'3f\u1084\'3f\u1084\'3f (0-text, 1-xmltv, 4-xls, 9-html).}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+$timeoutServer = 30; // \u1054\'3f\u1078\'3f\u1080\'3f\u1076\'3f\u1072\'3f\u1085\'3f\u1080\'3f\u1077\'3f \u1087\'3f\u1086\'3f\u1076\'3f\u1082\'3f\u1083\'3f\u1102\'3f\u1095\'3f\u1077\'3f\u1085\'3f\u1080\'3f\u1103\'3f \u1082\'3f \u1089\'3f\u1077\'3f\u1088\'3f\u1074\'3f\u1077\'3f\u1088\'3f\u1091\'3f \u1074\'3f \u1089\'3f\u1077\'3f\u1082\'3f\u1091\'3f\u1085\'3f\u1076\'3f\u1072\'3f\u1093\'3f}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+$timeoutData = 60; // \u1054\'3f\u1078\'3f\u1080\'3f\u1076\'3f\u1072\'3f\u1085\'3f\u1080\'3f\u1077\'3f \u1076\'3f\u1072\'3f\u1085\'3f\u1085\'3f\u1099\'3f\u1093\'3f \u1074\'3f \u1089\'3f\u1077\'3f\u1082\'3f\u1091\'3f\u1085\'3f\u1076\'3f\u1072\'3f\u1093\'3f}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar\hich\af4\loch\fs22\lang1049\f4\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+//=============================================================================}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar\hich\af4\loch\fs22\lang1049\f4\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+// \u1060\'3f\u1086\'3f\u1088\'3f\u1084\'3f\u1080\'3f\u1088\'3f\u1091\'3f\u1077\'3f\u1084\'3f HTML \u1079\'3f\u1072\'3f\u1087\'3f\u1088\'3f\u1086\'3f\u1089\'3f \u1076\'3f\u1083\'3f\u1103\'3f \u1087\'3f\u1086\'3f\u1083\'3f\u1091\'3f\u1095\'3f\u1077\'3f\u1085\'3f\u1080\'3f\u1103\'3f \u1089\'3f\u1087\'3f\u1080\'3f\u1089\'3f\u1082\'3f\u1072\'3f \u1087\'3f\u1088\'3f\u1086\'3f\u1075\'3f\u1088\'3f\u1072\'3f\u1084\'3f\u1084\'3f \u1080\'3f \u1088\'3f\u1077\'3f\u1075\'3f\u1080\'3f\u1089\'3f\u1090\'3f\u1088\'3f\u1072\'3f\u1094\'3f\u1080\'3f\u1080\'3f \u1087\'3f\u1086\'3f\u1083\'3f\u1100\'3f\u1079\'3f\u1086\'3f\u1074\'3f\u1072\'3f\u1090\'3f\u1077\'3f\u1083\'3f\u1103\'3f.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+header('Content-type: text/plain; charset=UTF-8');}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+$urlIndex = "/xchenel.php?login=$Login&pass=$Pass&show=$Show&xmltv=$XmlTV";}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+$myHttp = "";}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+$myHttp .= "GET $urlIndex HTTP/1.1\\r\\n";}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+$myHttp .= "User-Agent: Mozilla/4.0 (compatible; MSIE 5.0; Windows 98)\\r\\n";}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+$myHttp .= "Accept: */*\\r\\n";}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+$myHttp .= "Host: $srvHost\\r\\n";}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+$myHttp .= "Referer: }{{\field{\*\fldinst HYPERLINK "http://$srvHost\\\\r\\\\n" }{\fldrslt {\hich\af4\loch\cf2\fs22\lang1049\ul\ulc0\f4\loch
+http://$srvHost\\r\\n}{}}}\hich\af4\loch\fs22\lang1049\f4\loch
+";}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+$myHttp .= "\\r\\n\\r\\n";}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar\hich\af4\loch\fs22\lang1049\f4\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+$fp = fsockopen($srvHost, 80, $errno, $errstr, $timeoutServer);}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+if (!$fp) \{}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+    }{\hich\af4\loch\fs22\lang1049\f4\loch
+echo "Server $srvHost. Connection failed: $errno, $errstr\\n";}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+    }{\hich\af4\loch\fs22\lang1049\f4\loch
+exit;}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+\}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar\hich\af4\loch\fs22\lang1049\f4\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+stream_set_timeout($fp, 0, $timeoutData * 1000);}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+fwrite($fp, $myHttp);}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+$retIndex = '';}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+while (!feof($fp)) \{}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+    }{\hich\af4\loch\fs22\lang1049\f4\loch
+$retIndex .= fgets($fp, 4096);}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+\}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+fclose($fp);}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar\hich\af4\loch\fs22\lang1049\f4\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+// \u1055\'3f\u1086\'3f\u1083\'3f\u1091\'3f\u1095\'3f\u1072\'3f\u1077\'3f\u1084\'3f HTTP \u1079\'3f\u1072\'3f\u1075\'3f\u1086\'3f\u1083\'3f\u1086\'3f\u1074\'3f\u1082\'3f\u1080\'3f.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+$p = strpos($retIndex, "\\r\\n\\r\\n");}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+$hdrIndex = substr($retIndex, 0, $p);}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar\hich\af4\loch\fs22\lang1049\f4\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+// \u1055\'3f\u1086\'3f\u1083\'3f\u1091\'3f\u1095\'3f\u1072\'3f\u1077\'3f\u1084\'3f \u1089\'3f\u1086\'3f\u1076\'3f\u1077\'3f\u1088\'3f\u1078\'3f\u1080\'3f\u1084\'3f\u1086\'3f\u1077\'3f \u1073\'3f\u1077\'3f\u1079\'3f HTTP \u1079\'3f\u1072\'3f\u1075\'3f\u1086\'3f\u1083\'3f\u1086\'3f\u1074\'3f\u1082\'3f\u1086\'3f\u1074\'3f.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+$cntIndex = substr($retIndex, $p + 4);}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar\hich\af4\loch\fs22\lang1049\f4\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+// \u1054\'3f\u1073\'3f\u1088\'3f\u1077\'3f\u1079\'3f\u1072\'3f\u1077\'3f\u1084\'3f \u1088\'3f\u1072\'3f\u1079\'3f\u1084\'3f\u1077\'3f\u1088\'3f}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+if (strpos($hdrIndex, 'Content-Length: ') === false) \{}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+    }{\hich\af4\loch\fs22\lang1049\f4\loch
+$k = strpos($cntIndex, "\\r\\n");}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+    }{\hich\af4\loch\fs22\lang1049\f4\loch
+if ($k !== false && $k >= 0 && $k <= 4) \{}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+        }{\hich\af4\loch\fs22\lang1049\f4\loch
+$cntIndex = substr($cntIndex, $k + 2);}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+    }{\hich\af4\loch\fs22\lang1049\f4\loch
+\}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+\}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar\hich\af4\loch\fs22\lang1049\f4\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+$Cookie = "";}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+// \u1055\'3f\u1086\'3f\u1083\'3f\u1091\'3f\u1095\'3f\u1072\'3f\u1077\'3f\u1084\'3f ID \u1057\'3f\u1077\'3f\u1089\'3f\u1089\'3f\u1080\'3f\u1080\'3f \u1076\'3f\u1083\'3f\u1103\'3f \u1076\'3f\u1072\'3f\u1083\'3f\u1100\'3f\u1085\'3f\u1077\'3f\u1081\'3f\u1096\'3f\u1077\'3f\u1081\'3f \u1087\'3f\u1077\'3f\u1088\'3f\u1077\'3f\u1076\'3f\u1072\'3f\u1095\'3f\u1080\'3f \u1074\'3f \u1086\'3f\u1090\'3f\u1082\'3f\u1088\'3f\u1099\'3f\u1074\'3f\u1072\'3f\u1077\'3f\u1084\'3f\u1099\'3f\u1077\'3f \u1089\'3f\u1082\'3f\u1088\'3f\u1080\'3f\u1087\'3f\u1090\'3f\u1099\'3f.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+if (preg_match('/Set-Cookie:(.+?);/s', $hdrIndex, $arr)) \{}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+    }{\hich\af4\loch\fs22\lang1049\f4\loch
+$Cookie = $arr[1];}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+\} else \{}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+    }{\hich\af4\loch\fs22\lang1049\f4\loch
+echo "\u1053\'3f\u1077\'3f \u1091\'3f\u1076\'3f\u1072\'3f\u1083\'3f\u1086\'3f\u1089\'3f\u1100\'3f \u1087\'3f\u1086\'3f\u1083\'3f\u1091\'3f\u1095\'3f\u1080\'3f\u1090\'3f\u1100\'3f ID \u1057\'3f\u1077\'3f\u1089\'3f\u1089\'3f\u1080\'3f\u1080\'3f, \u1087\'3f\u1088\'3f\u1086\'3f\u1076\'3f\u1086\'3f\u1083\'3f\u1078\'3f\u1077\'3f\u1085\'3f\u1080\'3f\u1077\'3f \u1085\'3f\u1077\'3f\u1074\'3f\u1086\'3f\u1079\'3f\u1084\'3f\u1086\'3f\u1078\'3f\u1085\'3f\u1086\'3f!\\n";}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+    }{\hich\af4\loch\fs22\lang1049\f4\loch
+exit;}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+\}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar\hich\af4\loch\fs22\lang1049\f4\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+// echo $cntIndex; // \u1042\'3f\u1099\'3f\u1074\'3f\u1086\'3f\u1076\'3f \u1089\'3f\u1087\'3f\u1080\'3f\u1089\'3f\u1082\'3f\u1072\'3f \u1076\'3f\u1086\'3f\u1089\'3f\u1090\'3f\u1091\'3f\u1087\'3f\u1085\'3f\u1099\'3f\u1093\'3f \u1082\'3f\u1072\'3f\u1085\'3f\u1072\'3f\u1083\'3f\u1086\'3f\u1074\'3f.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar\hich\af4\loch\fs22\lang1049\f4\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+// \u1053\'3f\u1072\'3f\u1093\'3f\u1086\'3f\u1076\'3f\u1080\'3f\u1084\'3f \u1089\'3f\u1089\'3f\u1099\'3f\u1083\'3f\u1082\'3f\u1080\'3f \u1085\'3f\u1072\'3f \u1087\'3f\u1088\'3f\u1086\'3f\u1075\'3f\u1072\'3f\u1084\'3f\u1084\'3f\u1099\'3f.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+preg_match_all('/<Name>(.+?)<\\/Name>.*?<EfirWeek>(.+?)<\\/EfirWeek>.*?<ChannelID>(.+?)<\\/ChannelID>.*?<Variant>(.+?)<\\/Variant>/s', $cntIndex, $rows, PREG_SET_ORDER);}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar\hich\af4\loch\fs22\lang1049\f4\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+// \u1057\'3f\u1082\'3f\u1072\'3f\u1095\'3f\u1080\'3f\u1074\'3f\u1072\'3f\u1077\'3f\u1084\'3f \u1087\'3f\u1088\'3f\u1086\'3f\u1075\'3f\u1088\'3f\u1072\'3f\u1084\'3f\u1084\'3f\u1099\'3f.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+$errors = '';}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+$count = 0;}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+foreach ($rows as $row) \{}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+    }{\hich\af4\loch\fs22\lang1049\f4\loch
+$url = $row[1];}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+    }{\hich\af4\loch\fs22\lang1049\f4\loch
+$week = $row[2];}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+    }{\hich\af4\loch\fs22\lang1049\f4\loch
+$id = $row[3];}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+    }{\hich\af4\loch\fs22\lang1049\f4\loch
+$variant = $row[4];}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+    }
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+    }{\hich\af4\loch\fs22\lang1049\f4\loch
+if ($variant == 'R') \{ // \u1054\'3f\u1073\'3f\u1088\'3f\u1072\'3f\u1073\'3f\u1072\'3f\u1090\'3f\u1099\'3f\u1074\'3f\u1072\'3f\u1077\'3f\u1084\'3f \u1090\'3f\u1086\'3f\u1083\'3f\u1100\'3f\u1082\'3f\u1086\'3f \u1088\'3f\u1072\'3f\u1089\'3f\u1087\'3f\u1080\'3f\u1089\'3f\u1072\'3f\u1085\'3f\u1080\'3f\u1103\'3f}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+        }{\hich\af4\loch\fs22\lang1049\f4\loch
+// \u1043\'3f\u1077\'3f\u1085\'3f\u1077\'3f\u1088\'3f\u1080\'3f\u1084\'3f HTML \u1079\'3f\u1072\'3f\u1087\'3f\u1088\'3f\u1086\'3f\u1089\'3f\u1099\'3f \u1076\'3f\u1083\'3f\u1103\'3f \u1087\'3f\u1086\'3f\u1083\'3f\u1091\'3f\u1095\'3f\u1077\'3f\u1085\'3f\u1080\'3f\u1103\'3f \u1090\'3f\u1077\'3f\u1082\'3f\u1089\'3f\u1090\'3f\u1086\'3f\u1074\'3f \u1087\'3f\u1088\'3f\u1086\'3f\u1075\'3f\u1088\'3f\u1072\'3f\u1084\'3f\u1084\'3f.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+        }{\hich\af4\loch\fs22\lang1049\f4\loch
+$myHttp = "";}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+        }{\hich\af4\loch\fs22\lang1049\f4\loch
+$myHttp .= "GET " . $url . " HTTP/1.1\\r\\n";}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+        }{\hich\af4\loch\fs22\lang1049\f4\loch
+$myHttp .= "User-Agent: Mozilla/4.0 (compatible; MSIE 5.0; Windows 98)\\r\\n";}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+        }{\hich\af4\loch\fs22\lang1049\f4\loch
+$myHttp .= "Accept: */*\\r\\n";}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+        }{\hich\af4\loch\fs22\lang1049\f4\loch
+$myHttp .= "Host: $srvHost\\r\\n";}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+        }{\hich\af4\loch\fs22\lang1049\f4\loch
+$myHttp .= "Referer: }{{\field{\*\fldinst HYPERLINK "http://$srvHost\\\\r\\\\n" }{\fldrslt {\hich\af4\loch\cf2\fs22\lang1049\ul\ulc0\f4\loch
+http://$srvHost\\r\\n}{}}}\hich\af4\loch\fs22\lang1049\f4\loch
+";}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar\hich\af4\loch\fs22\lang1049\f4\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+        }{\hich\af4\loch\fs22\lang1049\f4\loch
+// \u1055\'3f\u1077\'3f\u1088\'3f\u1077\'3f\u1076\'3f\u1072\'3f\u1077\'3f\u1084\'3f ID \u1057\'3f\u1077\'3f\u1089\'3f\u1089\'3f\u1080\'3f\u1080\'3f!}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+        }{\hich\af4\loch\fs22\lang1049\f4\loch
+$myHttp .= "Cookie: " . $Cookie . "\\r\\n";}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+        }{\hich\af4\loch\fs22\lang1049\f4\loch
+$myHttp .= "\\r\\n\\r\\n";}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar\hich\af4\loch\fs22\lang1049\f4\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+        }{\hich\af4\loch\fs22\lang1049\f4\loch
+$fp = fsockopen($srvHost, 80, $errno, $errstr, $timeoutServer);}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+        }{\hich\af4\loch\fs22\lang1049\f4\loch
+if (!$fp) \{}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+            }{\hich\af4\loch\fs22\lang1049\f4\loch
+$errors .= "URL $url. Connection failed: $errno, $errstr\\n";}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+        }{\hich\af4\loch\fs22\lang1049\f4\loch
+\}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+        }
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+        }{\hich\af4\loch\fs22\lang1049\f4\loch
+// \u1055\'3f\u1086\'3f\u1083\'3f\u1091\'3f\u1095\'3f\u1072\'3f\u1077\'3f\u1084\'3f \u1087\'3f\u1088\'3f\u1086\'3f\u1075\'3f\u1088\'3f\u1072\'3f\u1084\'3f\u1084\'3f\u1091\'3f.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+        }{\hich\af4\loch\fs22\lang1049\f4\loch
+$ret = '';}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+        }{\hich\af4\loch\fs22\lang1049\f4\loch
+stream_set_timeout($fp, 0, $timeoutData * 1000);}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+        }{\hich\af4\loch\fs22\lang1049\f4\loch
+if (fwrite($fp, $myHttp) !== false) \{}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+            }{\hich\af4\loch\fs22\lang1049\f4\loch
+while (!feof($fp)) \{}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+                }{\hich\af4\loch\fs22\lang1049\f4\loch
+$ret .= fgets($fp, 4096);}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+            }{\hich\af4\loch\fs22\lang1049\f4\loch
+\}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+        }{\hich\af4\loch\fs22\lang1049\f4\loch
+\}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+        }{\hich\af4\loch\fs22\lang1049\f4\loch
+fclose($fp);}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+        }
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+        }{\hich\af4\loch\fs22\lang1049\f4\loch
+if ($ret) \{}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+            }{\hich\af4\loch\fs22\lang1049\f4\loch
+// \u1055\'3f\u1086\'3f\u1083\'3f\u1091\'3f\u1095\'3f\u1072\'3f\u1077\'3f\u1084\'3f HTTP \u1079\'3f\u1072\'3f\u1075\'3f\u1086\'3f\u1083\'3f\u1086\'3f\u1074\'3f\u1082\'3f\u1080\'3f.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+            }{\hich\af4\loch\fs22\lang1049\f4\loch
+$p = strpos($ret, "\\r\\n\\r\\n");}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+            }{\hich\af4\loch\fs22\lang1049\f4\loch
+$hdr = substr($ret, 0, $p);}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar\hich\af4\loch\fs22\lang1049\f4\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+            }{\hich\af4\loch\fs22\lang1049\f4\loch
+// \u1055\'3f\u1086\'3f\u1083\'3f\u1091\'3f\u1095\'3f\u1072\'3f\u1077\'3f\u1084\'3f \u1089\'3f\u1086\'3f\u1076\'3f\u1077\'3f\u1088\'3f\u1078\'3f\u1080\'3f\u1084\'3f\u1086\'3f\u1077\'3f \u1073\'3f\u1077\'3f\u1079\'3f HTTP \u1079\'3f\u1072\'3f\u1075\'3f\u1086\'3f\u1083\'3f\u1086\'3f\u1074\'3f\u1082\'3f\u1086\'3f\u1074\'3f.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+            }{\hich\af4\loch\fs22\lang1049\f4\loch
+$cnt = substr($ret, $p + 4);}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar\hich\af4\loch\fs22\lang1049\f4\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+            }{\hich\af4\loch\fs22\lang1049\f4\loch
+// \u1054\'3f\u1073\'3f\u1088\'3f\u1077\'3f\u1079\'3f\u1072\'3f\u1077\'3f\u1084\'3f \u1088\'3f\u1072\'3f\u1079\'3f\u1084\'3f\u1077\'3f\u1088\'3f.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+            }{\hich\af4\loch\fs22\lang1049\f4\loch
+if (strpos($hdr, 'Content-Length: ') === false) \{}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+                }{\hich\af4\loch\fs22\lang1049\f4\loch
+$k = strpos($cnt, "\\r\\n");}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+                }{\hich\af4\loch\fs22\lang1049\f4\loch
+if ($k !== false && $k >= 0 && $k <= 4) \{}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+                    }{\hich\af4\loch\fs22\lang1049\f4\loch
+$cnt = substr($cnt, $k + 2);}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+                }{\hich\af4\loch\fs22\lang1049\f4\loch
+\}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+            }{\hich\af4\loch\fs22\lang1049\f4\loch
+\}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar\hich\af4\loch\fs22\lang1049\f4\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+            }{\hich\af4\loch\fs22\lang1049\f4\loch
+// \u1057\'3f\u1086\'3f\u1093\'3f\u1088\'3f\u1072\'3f\u1085\'3f\u1103\'3f\u1077\'3f\u1084\'3f \u1087\'3f\u1088\'3f\u1086\'3f\u1075\'3f\u1088\'3f\u1072\'3f\u1084\'3f\u1084\'3f\u1091\'3f \u1074\'3f \u1092\'3f\u1072\'3f\u1081\'3f\u1083\'3f.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+            }{\hich\af4\loch\fs22\lang1049\f4\loch
+$filename = preg_replace('[^a-zA-Z0-9_-]', '_', $id) . '_' . $week . '.xml';}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+            }{\hich\af4\loch\fs22\lang1049\f4\loch
+file_put_contents($filename, $cnt);}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+            }
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+            }{\hich\af4\loch\fs22\lang1049\f4\loch
+$count++;}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+        }{\hich\af4\loch\fs22\lang1049\f4\loch
+\} else \{}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+            }{\hich\af4\loch\fs22\lang1049\f4\loch
+$errors .= "URL $url. No data.\\n";}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+        }{\hich\af4\loch\fs22\lang1049\f4\loch
+\}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+    }{\hich\af4\loch\fs22\lang1049\f4\loch
+\}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+\}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar\hich\af4\loch\fs22\lang1049\f4\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+echo "\u1057\'3f\u1086\'3f\u1093\'3f\u1088\'3f\u1072\'3f\u1085\'3f\u1077\'3f\u1085\'3f\u1086\'3f \u1087\'3f\u1088\'3f\u1086\'3f\u1075\'3f\u1088\'3f\u1072\'3f\u1084\'3f\u1084\'3f: $count\\n";}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar\hich\af4\loch\fs22\lang1049\f4\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+// \u1042\'3f\u1099\'3f\u1074\'3f\u1086\'3f\u1076\'3f \u1086\'3f\u1096\'3f\u1080\'3f\u1073\'3f\u1086\'3f\u1082\'3f}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+if ($errors) \{}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4
+    }{\hich\af4\loch\fs22\lang1049\f4\loch
+echo $errors;}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+\}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar\hich\af4\loch\fs22\lang1049\f4\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af9\langfe2052\sl240\slmult1\ql\ltrpar{\hich\af4\loch\fs22\lang1049\f4\loch
+?>}
+\par }

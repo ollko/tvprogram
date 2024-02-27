@@ -1,0 +1,142 @@
+﻿<?php
+/**
+ * Пример автоматического скачивания телепрограмм.
+ */
+
+set_time_limit(600); // Максимальное время выполнения скрипта.
+$srvHost = 'xmltv.s-tv.ru';
+$Login = 'test'; // Ваш логин.
+$Pass = ''; // Ваш пароль.
+$Show = '2'; // Список каналов в формате 1-HTML, 2-XML.
+$XmlTV = '1'; // Формат программ (0-text, 1-xmltv, 4-xls, 9-html).
+$timeoutServer = 30; // Ожидание подключения к серверу в секундах
+$timeoutData = 60; // Ожидание данных в секундах
+
+//=============================================================================
+
+// Формируем HTML запрос для получения списка программ и регистрации пользователя.
+header('Content-type: text/plain; charset=UTF-8');
+$urlIndex = "/xchenel.php?login=$Login&pass=$Pass&show=$Show&xmltv=$XmlTV";
+$myHttp = "";
+$myHttp .= "GET $urlIndex HTTP/1.1\r\n";
+$myHttp .= "User-Agent: Mozilla/4.0 (compatible; MSIE 5.0; Windows 98)\r\n";
+$myHttp .= "Accept: */*\r\n";
+$myHttp .= "Host: $srvHost\r\n";
+$myHttp .= "Referer: http://$srvHost\r\n";
+$myHttp .= "\r\n\r\n";
+
+$fp = fsockopen($srvHost, 80, $errno, $errstr, $timeoutServer);
+if (!$fp) {
+    echo "Server $srvHost. Connection failed: $errno, $errstr\n";
+    exit;
+}
+
+stream_set_timeout($fp, 0, $timeoutData * 1000);
+fwrite($fp, $myHttp);
+$retIndex = '';
+while (!feof($fp)) {
+    $retIndex .= fgets($fp, 4096);
+}
+fclose($fp);
+
+// Получаем HTTP заголовки.
+$p = strpos($retIndex, "\r\n\r\n");
+$hdrIndex = substr($retIndex, 0, $p);
+
+// Получаем содержимое без HTTP заголовков.
+$cntIndex = substr($retIndex, $p + 4);
+
+// Обрезаем размер
+if (strpos($hdrIndex, 'Content-Length: ') === false) {
+    $k = strpos($cntIndex, "\r\n");
+    if ($k !== false && $k >= 0 && $k <= 4) {
+        $cntIndex = substr($cntIndex, $k + 2);
+    }
+}
+
+$Cookie = "";
+// Получаем ID Сессии для дальнейшей передачи в открываемые скрипты.
+if (preg_match('/Set-Cookie:(.+?);/s', $hdrIndex, $arr)) {
+    $Cookie = $arr[1];
+} else {
+    echo "Не удалось получить ID Сессии, продолжение невозможно!\n";
+    exit;
+}
+
+// echo $cntIndex; // Вывод списка доступных каналов.
+
+// Находим ссылки на прогаммы.
+preg_match_all('/<Name>(.+?)<\/Name>.*?<EfirWeek>(.+?)<\/EfirWeek>.*?<ChannelID>(.+?)<\/ChannelID>.*?<Variant>(.+?)<\/Variant>/s', $cntIndex, $rows, PREG_SET_ORDER);
+
+// Скачиваем программы.
+$errors = '';
+$count = 0;
+foreach ($rows as $row) {
+    $url = $row[1];
+    $week = $row[2];
+    $id = $row[3];
+    $variant = $row[4];
+    
+    if ($variant == 'R') { // Обрабатываем только расписания
+        // Генерим HTML запросы для получения текстов программ.
+        $myHttp = "";
+        $myHttp .= "GET " . $url . " HTTP/1.1\r\n";
+        $myHttp .= "User-Agent: Mozilla/4.0 (compatible; MSIE 5.0; Windows 98)\r\n";
+        $myHttp .= "Accept: */*\r\n";
+        $myHttp .= "Host: $srvHost\r\n";
+        $myHttp .= "Referer: http://$srvHost\r\n";
+
+        // Передаем ID Сессии!
+        $myHttp .= "Cookie: " . $Cookie . "\r\n";
+        $myHttp .= "\r\n\r\n";
+
+        $fp = fsockopen($srvHost, 80, $errno, $errstr, $timeoutServer);
+        if (!$fp) {
+            $errors .= "URL $url. Connection failed: $errno, $errstr\n";
+        }
+        
+        // Получаем программу.
+        $ret = '';
+        stream_set_timeout($fp, 0, $timeoutData * 1000);
+        if (fwrite($fp, $myHttp) !== false) {
+            while (!feof($fp)) {
+                $ret .= fgets($fp, 4096);
+            }
+        }
+        fclose($fp);
+        
+        if ($ret) {
+            // Получаем HTTP заголовки.
+            $p = strpos($ret, "\r\n\r\n");
+            $hdr = substr($ret, 0, $p);
+
+            // Получаем содержимое без HTTP заголовков.
+            $cnt = substr($ret, $p + 4);
+
+            // Обрезаем размер.
+            if (strpos($hdr, 'Content-Length: ') === false) {
+                $k = strpos($cnt, "\r\n");
+                if ($k !== false && $k >= 0 && $k <= 4) {
+                    $cnt = substr($cnt, $k + 2);
+                }
+            }
+
+            // Сохраняем программу в файл.
+            $filename = preg_replace('[^a-zA-Z0-9_-]', '_', $id) . '_' . $week . '.xml';
+            file_put_contents($filename, $cnt);
+            
+            $count++;
+        } else {
+            $errors .= "URL $url. No data.\n";
+        }
+    }
+}
+
+echo "Сохранено программ: $count\n";
+
+// Вывод ошибок
+if ($errors) {
+    echo $errors;
+}
+
+?>
